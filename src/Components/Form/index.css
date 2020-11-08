@@ -1,0 +1,70 @@
+
+.login{
+    padding: 100px 0% 100px 0%;
+    height: 50vh;
+}
+.titel{
+    /* background-color: #fff;  */
+    color: #fff;
+    margin: 50px 0px 50px 0px;
+    padding: 0px 25px 0px 25px;
+
+}
+.titel h1{
+    padding-top: 136px;
+}
+.titel label{
+    color: #815BFC;
+}
+.news{
+    font-family: inherit;
+    background-color: #fff; 
+    border-radius:0px 0px 0px 0px;
+    width: 220px;
+    margin: 50px 20px 50px 0px;
+}
+.img{
+    font-family: inherit;
+    background-color: #fff; 
+    border-radius:0px 0px 0px 0px;
+    width: 220px;
+    margin: 50px 0px 50px 0px;
+
+}
+
+.form-registro label {
+    color:#ABA9A9;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: row;  
+    border:4px;
+    background-color: #340EAF;
+    height: 550px;
+  
+   
+}
+body{
+    background-color: #0E0E0E;
+}
+
+.btnMore input{
+    border-radius: 10px 10px 10px 10px;
+    border-color:#340EAF;
+    
+}
+.btnMore{
+    padding-top: 40px;
+    color: #340EAF;
+}
+
+.news label{
+    color:#B7B6BB;
+}
+.info{
+    padding: 0px 10px 0px 10px;
+    text-align: start;
+}
+

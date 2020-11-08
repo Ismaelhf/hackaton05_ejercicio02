@@ -1,12 +1,8 @@
 import React,{useState} from 'react'
 import './index.css'
+import {data} from '../../constants/data'
 
 const Form = () => {
-
-    // const [amount, setAmount] = useState('');
-    // const [from, setFrom] = useState('');
-    // const [to, setTo] = useState('');
-
 
 const sendForm = (e) =>{
     e.preventDefault();
@@ -15,10 +11,7 @@ const sendForm = (e) =>{
 
     return (
         <section className="login">
-
-            {/* <div className="main"> */}
-
-            
+        
             <div className="container">   
 
                 <div className="titel">
@@ -26,16 +19,18 @@ const sendForm = (e) =>{
                     <label>Covering March & April 2015</label>
                 </div>
             
+            {data.map( news => ( 
+
                 <div className="news">        
 
                     <div className="img">
-                        <img src="https://www.lendacademy.com/wp-content/uploads/2015/05/Marketplace-Lending-News.jpg" width="100px" height="100px"/>
+                        <img src={news.linkImg} width="100px" height="100px"/>
                     </div>
                     <div className="info">
 
-                        <label>fecha</label>
-                        <h3>what happened in tha?</h3>
-                        <p>hola mundo noticias</p>
+                        <label>{news.date}</label>
+                        <h3>{news.title}</h3>
+                        <p>{news.text}</p>
                         <div className="btnMore">
                             <input type="submit" id="btnSubmit" value=">"/> Find out more
                         </div>
@@ -43,26 +38,9 @@ const sendForm = (e) =>{
                                 
                 </div>
                 
-                <div className="news">        
-
-                    <div className="img">
-                        <img src="https://www.lendacademy.com/wp-content/uploads/2015/05/Marketplace-Lending-News.jpg" width="100px" height="100px"/>
-                    </div>
-                    <div className="info">
-
-                        <label>fecha</label>
-                        <h3>what happened in tha?</h3>
-                        <p>hola mundo noticias</p>
-                        <div className="btnMore">
-                            <input type="submit" id="btnSubmit" value=">"/> Find out more
-                        </div>
-                    </div>
-                                
-                </div>
-                  
+            ))}    
 
             </div>
-            {/* </div> */}
             
 
                 {/* <div>form data:{JSON.stringify({name,email,to,comment})}</div> */}
